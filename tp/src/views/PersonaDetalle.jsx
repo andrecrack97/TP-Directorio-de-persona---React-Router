@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
-import { personas } from '../data/personas';
+import personas from "../data/people.json";
+
 
 export default function PersonaDetalle() {
   const { id } = useParams();

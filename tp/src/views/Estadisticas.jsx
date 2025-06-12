@@ -1,4 +1,5 @@
-import { personas } from '../data/personas';
+import personas from "../data/people.json";
+
 
 export default function Estadisticas() {
   const total = personas.length;

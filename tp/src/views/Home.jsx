@@ -1,4 +1,4 @@
-import { personas } from '../data/personas';
+import personas from '../data/people.json';
 import PersonaCard from '../components/PersonaCard';
 
 export default function Home() {
