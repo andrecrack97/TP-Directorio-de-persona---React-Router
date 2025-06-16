@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function FormularioContacto() {
+export default function FormularioContacto({ agregarPersona }) {
   const [form, setForm] = useState({
     nombre: '',
     apellido: '',
@@ -28,6 +28,7 @@ export default function FormularioContacto() {
     } else {
       setErrores({});
       setMensaje('¡Formulario enviado con éxito!');
+      agregarPersona(form); // 👈 se llama a la función pasada por props
       setForm({ nombre: '', apellido: '', email: '', edad: '' });
     }
   };

@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import FormularioContacto from '../components/FormularioContacto';
 
-export default function Contacto() {
+export default function Contacto({ agregarPersona }) {
   return (
     <div>
       <h1>Contacto</h1>
-      <FormularioContacto />
+      <FormularioContacto agregarPersona={agregarPersona} />
     </div>
   );
 }

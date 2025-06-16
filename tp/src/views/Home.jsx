@@ -1,7 +1,6 @@
-import personas from '../data/people.json';
 import PersonaCard from '../components/PersonaCard';
 
-export default function Home() {
+export default function Home({ personas }) {
   return (
     <div>
       <h1>Listado de Personas</h1>
